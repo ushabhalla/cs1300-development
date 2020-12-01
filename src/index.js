@@ -413,7 +413,7 @@ class App extends Component {
             </Toolbar>
           </AppBar>
           <Grid container direction="row" spacing={5}>
-            <Grid item width="300px">
+            <Grid item style={{ width: "300px" }}>
               <Grid container direction="column" spacing={2}>
                 <Grid item>
                   <Card>
@@ -437,7 +437,7 @@ class App extends Component {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item width="200px">
+            <Grid item>
               <ItemList
                 entries={this.state.currItems}
                 favorites={this.state.favorites}

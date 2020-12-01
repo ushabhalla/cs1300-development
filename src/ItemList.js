@@ -26,16 +26,20 @@ class ItemList extends Component {
         backgroundColor: theme.palette.background.paper
       },
       gridList: {
-        width: "750px",
+        width: "650px",
         height: "100%"
+      },
+      smallButton : {
+        fontSize: 10,
+        lineHeight: .75,
       }
     }));
 
     return (
-      <GridListTile style={{ width: "250px", height: "auto" }}>
+      <GridListTile style={{ width: "180px", height: "auto" }}>
         <Card className={classes.root}>
           <CardActionArea>
-            <CardMedia component="img" height={200} image={item.image} />
+            <CardMedia component="img" height={150} image={item.image} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {item.title}
@@ -57,7 +61,7 @@ class ItemList extends Component {
               keyGen={this.props.keyGen}
             />
 
-            <Button size="small" color="primary" href={item.wiki}>
+            <Button size="small" color="primary" href={item.wiki} className={classes.smallButton}>
               Learn More
             </Button>
           </CardActions>
@@ -84,7 +88,7 @@ class ItemList extends Component {
     const listItems = todoEntries.map(this.createTask);
     return (
       <div className={classes.root}>
-        <GridList className={classes.gridList} style={{ width: "780px" }}>
+        <GridList className={classes.gridList} style={{ width: "730px" }}>
           {listItems}
         </GridList>
       </div>

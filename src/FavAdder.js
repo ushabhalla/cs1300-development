@@ -18,7 +18,7 @@ class FavAdder extends Component {
     return (
       <FormControl margin="normal">
         <form>
-          <Button color="primary" variant="contained" onClick={this.addfav}>
+          <Button color="primary" variant="contained" size="small" onClick={this.addfav}>
             Stack
           </Button>
         </form>

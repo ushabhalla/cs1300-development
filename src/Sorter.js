@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import {
   Paper,
   Button,
+  ButtonGroup
 } from "@material-ui/core";
 
 
@@ -10,10 +11,11 @@ import {
 class Sorter extends Component {
   render() {
     return (
-      <Paper>
+      <ButtonGroup>
         <Button
           variant="contained"
           color="primary"
+          size="small"
           onClick={() => {
             this.props.sorthfun();
           }}
@@ -23,6 +25,7 @@ class Sorter extends Component {
         <Button
           variant="contained"
           color="primary"
+          size="small"
           onClick={() => {
             this.props.sortwfun();
           }}
@@ -32,13 +35,14 @@ class Sorter extends Component {
         <Button
           variant="contained"
           color="primary"
+          size="small"
           onClick={() => {
             this.props.sortazfun();
           }}
         >
           A-Z
         </Button>
-      </Paper>
+        </ButtonGroup>
     );
   }
 }

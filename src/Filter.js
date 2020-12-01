@@ -30,6 +30,7 @@ class Filter extends Component {
               aria-label="text primary button group"
             >
               <Button
+                size="small"
                 onClick={() => {
                   filthfun("tall");
                 }}
@@ -37,6 +38,7 @@ class Filter extends Component {
                 Tall
               </Button>
               <Button
+                size="small"
                 onClick={() => {
                   filthfun("short");
                 }}
@@ -44,6 +46,7 @@ class Filter extends Component {
                 Short
               </Button>
               <Button
+                size="small"
                 onClick={() => {
                   filthfun("all");
                 }}
@@ -59,6 +62,7 @@ class Filter extends Component {
               aria-label="text primary button group"
             >
               <Button
+                size="small"
                 onClick={() => {
                   filtwfun("heavy");
                 }}
@@ -66,6 +70,7 @@ class Filter extends Component {
                 Heavy
               </Button>
               <Button
+                size="small"
                 onClick={() => {
                   filtwfun("light");
                 }}
@@ -73,6 +78,7 @@ class Filter extends Component {
                 Light
               </Button>
               <Button
+                size="small"
                 onClick={() => {
                   filtwfun("all");
                 }}
@@ -83,7 +89,7 @@ class Filter extends Component {
           </ListItem>
           <ListItem>
             <Typography variant="caption" display="block" gutterBottom>
-              <p>Note: Tall &gt;= 35 in and Heavy &gt;= 1000 lbs</p>
+              <p>Note: Tall &gt;= 35 in, Heavy &gt;= 1000 lbs</p>
             </Typography>
           </ListItem>
         </List>
