@@ -406,13 +406,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Paper>
+        <Paper style={{ backgroundColor: '#e6eeff' }}>
           <AppBar position="static" style={{ marginBottom: "10px" }}>
             <Toolbar>
               <Typography variant="h6">Stackimals!</Typography>
             </Toolbar>
           </AppBar>
-          <Grid container direction="row" spacing={5}>
+          <Grid container direction="row" spacing={5} style={{ marginLeft: "8px"}}>
             <Grid item style={{ width: "300px" }}>
               <Grid container direction="column" spacing={2}>
                 <Grid item>
