@@ -88,7 +88,7 @@ class ItemList extends Component {
     const listItems = todoEntries.map(this.createTask);
     return (
       <div className={classes.root}>
-        <GridList className={classes.gridList} style={{ width: "730px" }}>
+        <GridList className={classes.gridList} style={{ width: "721px" }}>
           {listItems}
         </GridList>
       </div>
